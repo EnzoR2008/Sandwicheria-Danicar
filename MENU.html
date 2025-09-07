@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandwichería Danicar</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #fdf6e3; /* blanco suave */
+      color: #000;
+      display: flex;
+      min-height: 100vh;
+    }
+
+/* Barra lateral */
+nav {
+  background: #fac107; /* mostaza */
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 20px;
+  gap: 25px;
+  box-shadow: 5px 0 15px rgba(0,0,0,0.3);
+}
+
+nav h1 {
+  font-size: 2.5em; /* título grande */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+  color: #000;
+  margin-bottom: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3em; /* enlaces más chicos que el título */
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(255,255,255,0.5);
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+    /* Contenido principal */
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     background: linear-gradient(120deg, #fffdf6, #e1e1de);
+    }
+
+    main h2 {
+      font-size: 3em;
+      color: #000;
+      text-transform: uppercase;
+      text-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    main p {
+      font-size: 1.5em;
+      color: #333;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* Contenido principal */
+    .content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    header {
+      background: #fac107;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      letter-spacing: 2px;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 2em;
+      color: #d9901a;
+      border-bottom: 3px solid #d9901a;
+      padding-bottom: 5px;
+      margin-bottom: 25px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 15px 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .menu-item h3 {
+      margin: 0;
+      font-size: 1.3em;
+      color: #d9901a;
+    }
+
+    .menu-item p {
+      margin: 5px 0 0 0;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .menu-item .price {
+      font-weight: bold;
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #d9901a;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra lateral -->
+  <nav>
+    <h1>DANICAR</h1>
+    <a href="INICIO.html">Inicio</a>
+    <a href="MENU.html">Menú</a>
+    <a href="CONTACTO.html">Contacto</a>
+    <a href="UBICACIÓN.html">Ubicación</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="content">
+    <header>
+      <h1>Sandwichería Danicar</h1>
+      <p>Menú</p>
+    </header> 
+
+  <!-- Sección PANCHOS -->
+  <section class="section">
+    <h2>Panchos</h2>
+    <div class="menu-item">
+  <div>
+    <h3>PANCHO SIMPLE</h3>
+    <p>C/CONDIMENTO</p>
+  </div>
+  <div class="price">$2.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PANCHO SIMPLE CON CHEDDAR</h3>
+    <p>C/CONDIMENTO Y QUESO CHEDDAR</p>
+  </div>
+  <div class="price">$3.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PANCHO DOBLE</h3>
+    <p>C/CONDIMENTO Y DOS SALCHICHAS</p>
+  </div>
+  <div class="price">$3.500</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PANCHO DOBLE CON PONCHO</h3>
+    <p>C/CONDIMENTO, JAMÓN Y QUESO</p>
+  </div>
+  <div class="price">$3.500</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PANCHO DANICAR</h3>
+    <p>DOBLE SALCHICHA, JAMÓN, QUESO, TOMATE, LECHUGA, CONDIMENTOS</p>
+  </div>
+  <div class="price">$5.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PANCHO CON PONCHO</h3>
+    <p>C/CONDIMENTO, JAMÓN Y QUESO</p>
+  </div>
+  <div class="price">$4.500</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PANCHO CON LLUVIA DE PAPAS</h3>
+    <p>C/CONDIMENTO</p>
+  </div>
+  <div class="price">$2.500</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PANCHO PRIMAVERA</h3>
+    <p>C/CONDIMENTO, TOMATE, LECHUGA Y QUESO</p>
+  </div>
+  <div class="price">$4.000</div>
+</div>
+  </section>
+
+  <!-- Sección Hamburguesas -->
+  <section class="section">
+    <h2>HAMBURGUESAS</h2>
+    <div class="menu-item">
+  <div>
+    <h3>HAMBURGUESA ESPECIAL</h3>
+    <p>C/CARNE, QUESO, TOMATE, LECHUGA, HUEVO (18CM)</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>HAMBURGUESA DOBLE CARNE</h3>
+    <p>QUESO, TOMATE, LECHUGA, HUEVO (18CM)</p>
+  </div>
+  <div class="price">$14.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>HAMBURGUESA DANICAR</h3>
+    <p>TRIPLE CARNE, DOBLE QUESO, TOMATE, LECHUGA, DOBLE HUEVO</p>
+  </div>
+  <div class="price">$18.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>HAMBUR-PIZZA</h3>
+    <p>2 PIZZAS, CARNE, LECHUGA, TOMATE, HUEVO, QUESO, JAMÓN Y ACEITUNAS</p>
+  </div>
+  <div class="price">$30.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>MEDIA HAMBUR-PIZZA</h3>
+    <p>2 PIZZAS, CARNE, LECHUGA, TOMATE, HUEVO, QUESO, JAMÓN Y ACEITUNAS</p>
+  </div>
+  <div class="price">$18.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>CHORIPAN</h3>
+    <p>CARNE, LECHUGA, TOMATE, CONDIMENTOS</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+    </section>
+    <!-- Sección Lomos -->
+<section class="section">
+    <h2>LOMOS</h2>
+<div class="menu-item">
+<div>
+    <h3>LOMO ESPECIAL</h3>
+    <p>CARNE, LECHUGA, TOMATE, QUESO, HUEVO, JAMÓN (30CM)</p>
+  </div>
+  <div class="price">$15.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>LOMO PAN FRANCÉS</h3>
+    <p>CARNE, LECHUGA, TOMATE, QUESO, HUEVO, JAMÓN (30CM)</p>
+  </div>
+  <div class="price">$15.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>LOMO X METRO (40 CM)</h3>
+    <p>CARNE, MAYO CASERTA, SALSA, QUESO, HUEVO, PAN CASERO</p>
+  </div>
+  <div class="price">$24.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>LOMO X METRO (60 CM)</h3>
+    <p>CARNE, MAYO CASERTA, SALSA, QUESO, HUEVO, PAN CASERO</p>
+  </div>
+  <div class="price">$29.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>LOMO X METRO (1 METRO)</h3>
+    <p>CARNE, MAYO CASERTA, SALSA, QUESO, HUEVO, PAN CASERO</p>
+  </div>
+  <div class="price">$44.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>MINI LOMO ESPECIAL</h3>
+    <p>CARNE, QUESO, HUEVO, TOMATE, LECHUGA, JAMÓN (18 CM)</p>
+  </div>
+  <div class="price">$13.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>LOMO DANICAR</h3>
+    <p>DOBLE CARNE, DOBLE QUESO, DOBLE HUEVO, JAMÓN (30 CM)</p>
+  </div>
+  <div class="price">$27.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>LOMO PIZZA</h3>
+    <p>2 PIZZAS, CARNE, LECHUGA, TOMATE, HUEVO, QUESO, JAMÓN Y ACEITUNAS</p>
+  </div>
+  <div class="price">$33.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>MEDIO LOMO PIZZA</h3>
+    <p>2 PIZZAS, CARNE, LECHUGA, TOMATE, HUEVO, QUESO, JAMÓN Y ACEITUNAS</p>
+  </div>
+  <div class="price">$20.000</div>
+</div>
+
+ <!-- Sección BARROLUCOS y CARLITOS -->
+  <section class="section">
+<h2>BARROLUCOS y CARLITOS</h2>
+<div class="menu-item">
+  <div>
+    <h3>BARROLUCO ESPECIAL</h3>
+    <p>CARNE, LECHUGA, TOMATE, QUESO, HUEVO, JAMÓN (30CM)</p>
+  </div>
+  <div class="price">$20.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>MEDIO BARROLUCO</h3>
+    <p>CARNE, LECHUGA, TOMATE, QUESO, HUEVO, JAMÓN (30CM)</p>
+  </div>
+  <div class="price">$12.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>BARROLUCO PIZZA</h3>
+    <p>CARNE, MAYO CASERTA, SALSA, QUESO, HUEVO, PAN CASERO</p>
+  </div>
+  <div class="price">$25.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>CARLITO</h3>
+    <p>JAMÓN Y QUESO</p>
+  </div>
+  <div class="price">$8.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>CARLITO DOBLE</h3>
+    <p>FIAMBRE, JAMÓN Y QUESO</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>CARLITO CON VERDURA</h3>
+    <p>JAMÓN, QUESO, LECHUGA Y TOMATE</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>CARLITO DANICAR</h3>
+    <p>DOBLE JAMÓN, DOBLE QUESO, DOBLE HUEVO, LECHUGA Y TOMATE</p>
+  </div>
+  <div class="price">$12.000</div>
+</div>
+
+  <!-- Sección PIZZAS -->
+  <section class="section">
+<h2>PIZZAS</h2>
+<div class="menu-item">
+  <div>
+<h3>MUZZARELLA</h3>
+<p>Solo mozzarella</p>
+</div>
+<div class="price">$7.500</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>MUZZARELLA Y ACEITUNAS</h3>
+    <p>Queso mozzarella con aceitunas</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>MUZZARELLA DOBLE</h3>
+    <p>Queso doble y aceitunas</p>
+  </div>
+  <div class="price">$10.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>ESPECIAL JAMÓN</h3>
+    <p>MUZZARELLA, ACEITUNAS Y JAMÓN</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>NAPOLITANA</h3>
+    <p>MUZZARELLA, TOMATE Y ACEITUNAS</p>
+  </div>
+  <div class="price">$13.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>ESPECIAL CON MORRÓN</h3>
+    <p>MUZZARELLA, ACEITUNAS, JAMÓN, HUEVO Y MORRÓN</p>
+  </div>
+  <div class="price">$15.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>ANCHOAS</h3>
+    <p>MUZZARELLA, ACEITUNAS, JAMÓN, HUEVO Y ANCHOAS</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PIZZA DANICAR</h3>
+    <p>MUZZARELLA, ACEITUNAS, JAMÓN, HUEVO, MORRÓN Y ANCHOAS</p>
+  </div>
+  <div class="price">$15.000</div>
+</div>
+
+  <!-- Sección MILANESAS -->
+  <section class="section">
+    <h2>MILANESAS</h2>
+    <div class="menu-item">
+  <div>
+    <h3>MILANESAS CON PAPAS O PURÉ</h3>
+    <p>Clásica milanesa acompañada con papas fritas o puré</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>MILANESAS A CABALLO CON PAPAS</h3>
+    <p>Milanesa con huevo a caballo acompañada con papas fritas</p>
+  </div>
+  <div class="price">$10.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>MILANESAS NAPOLITANA CON FRITAS</h3>
+    <p>Milanesa napolitana acompañada con papas fritas</p>
+  </div>
+  <div class="price">$10.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>SANDWICH DE MILANESA CON LECHUGA Y TOMATE</h3>
+    <p>Milanesa en pan con lechuga y tomate fresco</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+  <!-- Sección EMPANADAS -->
+  <section class="section">
+    <h2>EMPANADAS</h2>
+    <div class="menu-item">
+  <div>
+    <h3>EMPANADAS DE CARNE POR DOCENA</h3>
+    <p>Docena de empanadas rellenas de carne</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>EMPANADAS DE JAMÓN Y QUESO POR DOCENA</h3>
+    <p>Docena de empanadas rellenas de jamón y queso</p>
+  </div>
+  <div class="price">$9.500</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>EMPANADAS DE JAMÓN Y QUESO POR ½ DOCENA</h3>
+    <p>Media docena de empanadas rellenas de jamón y queso</p>
+  </div>
+  <div class="price">$5.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>EMPANADAS DE CARNE POR ½ DOCENA</h3>
+    <p>Media docena de empanadas rellenas de carne</p>
+  </div>
+  <div class="price">$4.500</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>EMPANADAS DE JAMÓN Y QUESO POR UNIDAD</h3>
+    <p>Empanada individual rellena de jamón y queso</p>
+  </div>
+  <div class="price">$900</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>EMPANADAS DE CARNE POR UNIDAD</h3>
+    <p>Empanada individual rellena de carne</p>
+  </div>
+  <div class="price">$900</div>
+</div>
+
+  <!-- Sección EMPANADAS -->
+  <section class="section">
+    <h2>PAPAS</h2>
+    <div class="menu-item">
+  <div>
+    <h3>PAPAS MEDIANAS</h3>
+    <p>Papas fritas medianas</p>
+  </div>
+  <div class="price">$4.500</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PAPAS MEDIANAS CON HUEVO</h3>
+    <p>Papas fritas medianas acompañadas con huevo</p>
+  </div>
+  <div class="price">$5.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PAPAS MEDIANAS CON QUESO CHEDDAR</h3>
+    <p>Papas fritas medianas con queso cheddar</p>
+  </div>
+  <div class="price">$6.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PAPAS MEDIANAS CON QUESO CHEDDAR Y HUEVO</h3>
+    <p>Papas fritas medianas con queso cheddar y huevo</p>
+  </div>
+  <div class="price">$7.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PAPAS GRANDES</h3>
+    <p>Papas fritas grandes</p>
+  </div>
+  <div class="price">$5.500</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PAPAS GRANDES CON HUEVO</h3>
+    <p>Papas fritas grandes acompañadas con huevo</p>
+  </div>
+  <div class="price">$7.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PAPAS GRANDES CON QUESO CHEDDAR</h3>
+    <p>Papas fritas grandes con queso cheddar</p>
+  </div>
+  <div class="price">$7.500</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>PAPAS GRANDES CON QUESO CHEDDAR Y HUEVO</h3>
+    <p>Papas fritas grandes con queso cheddar y huevo</p>
+  </div>
+  <div class="price">$8.000</div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>SALCHIPAPAS</h3>
+    <p>Papas fritas con salchicha</p>
+  </div>
+  <div class="price">$9.000</div>
+</div>
+
+  <!-- Sección Bebidas -->
+  <section class="section">
+    <h2>Bebidas</h2>
+    <div class="menu-item">
+  <div>
+    <h3>GASEOSA 500 CC</h3>
+    <p>COCA, FANTA, SPRITE</p>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>GASEOSA 1 ¼ LTS</h3>
+    <p>COCA, FANTA, SPRITE</p>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>GASEOSA 2 LTS</h3>
+    <p>COCA, FANTA, SPRITE</p>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>CERVEZA STELLA</h3>
+    <p>Botella de cerveza Stella Artois</p>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>CERVEZA QUILMES</h3>
+    <p>Botella de cerveza Quilmes</p>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>CERVEZA ANDES 1 LT</h3>
+    <p>Botella de cerveza Andes</p>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>CERVEZA EN LATA</h3>
+    <p>Cerveza en lata 330ml</p>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>AGUA MINERAL 1.5 LT</h3>
+    <p>Agua mineral sin gas</p>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>AGUA MINERAL 500 CC</h3>
+    <p>Agua mineral sin gas</p>
+  </div>
+</div>
+
+<div class="menu-item">
+  <div>
+    <h3>AGUA SABORIZADA 1,5 LT</h3>
+    <p>COCA DESCARTABLE 2,5 LTS: COCA, FANTA, SPRITE</p>
+  </div>
+  </section>
+
+  <footer>
+    <p> Pedidos: +54 9 261 271-8368 | Sandwichería Danicar</p>
+  </footer>
+
+</body>
+</html>
